@@ -1,0 +1,90 @@
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px
+}
+nav{ 
+	flex: 1;
+	text-align: right;
+}
+Nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+Nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+a{
+text-decoration: none;
+background-color: ; /*controls color for the links etc*/
+background-image : url("../Resources/Backgroundtest1.jpg")  /* for reason this isnt working */
+border: /*thin #FFFFFF;  /ontrols color for the border  etc*/
+width: 250px; /* this seem to control how the texts look whether is positive or negative effect */
+padding: 5px 20px; 5px, 20px;
+margin-right: 15px; 
+margin-bottom: 20px;
+}
+
+nav a:hover{
+background-color: skyblue;
+border-radius: 10px;
+color:black;
+}
+.container{
+	max-width: 1400px;
+	Margin: auto;
+	Padding-left: 25px;
+	padding-right: 25px;
+}
+
+
+
+body {  /*#000000; black */ 
+         /*##FFFFFF ; white  */ 
+  background-color: #FFFFFF ;/* white */
+  background-image : url("../Resources/Backgroundtest1.jpg")
+  
+  margin: 0;
+  
+}
+h1 {
+  color: #FFFFFF; /* change text to  black also this effects all pages  */ 
+}
+p {
+  color: #FFFFFF;/*  change text to black  also this effects all pages */
+}
+/*  this is needed to center images  */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; /*  this determine size of images */
+}
+/*  this is needed to center images  */
+ 
+ /*  this is use to put space between images   */
+ img{
+   width: 600px;
+   height: 300px;
+   margin-right: 100px;   /* Horizontal Space */
+   margin-bottom: 100px;  /* Vertical Space */
+   border:6px solid #000000; /* this create a border around the images,size and color */
+   
+  background-image : url("../Resources/Backgroundtest1.jpg")
+
+}
+/*  it also effects the size    */
+
+/* <length> */
+border-spacing: 2px;
+
+/* horizontal <length> | vertical <length> */
+border-spacing: 1cm 2em;
+
+

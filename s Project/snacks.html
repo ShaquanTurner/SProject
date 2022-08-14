@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>MOCHAVIL </title>
+
+    <meta name="author" content="Codeconvey" />
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/demo.css" />
+    <style>
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    </div>
+
+		
+
+  <img src="Resources/LOGO.gif" alt="logo"/>
+ <!-- this is how to center a image and how to insert image on html  -->
+
+
+
+<header class="ScriptHeader">
+    <div class="rt-container">
+    	<div class="col-rt-12">
+        	<div class="rt-heading">
+            	<h1> Pastries</h1>
+                <p>Best Pastires Island Wide</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+
+            <!-- Start Navigation HTML -->
+            <nav class="block-relative-left">
+                <div class="block-relative-left">
+                  <a class="flexbox" href="#"><i class="fa fa-home"></i></a>
+                  <button class="flexbox" id="btnMenu" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times"></i>
+                  </button>
+                </div>
+
+  <div class="block-relative-left menu" id="thisMenu">
+                    <a href="chef.html">
+                        <button class = "flexbox btn-list"> Chef</button></a>
+
+                        <a href="snacks.html">
+                            <button class = "flexbox btn-list"> Snacks</button></a>
+
+            <a href="Brunch.html">
+                        <button class = "flexbox btn-list"> Brunch</button></a>
+                        
+                        <a href="AboutUs.html">
+                            <button class = "flexbox btn-list"> AboutUs</button></a>
+
+             <a href="form.html">
+                        <button class = "flexbox btn-list"> Sign up </button></a>
+                        
+                        <a href="index.html">
+                            <button class = "flexbox btn-list">Pastry</button></a>         
+
+
+                  
+                
+                </div>
+                <div class="block-relative-right">
+                  <button class="flexbox" id="btnSearch" onclick="openSearch()">
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-times"></i>
+                  </button>
+                  <form class="search" id="thisSearch">
+                    <input type="text" placeholder="Search"/>
+                  </form>
+                </div>
+              </nav>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ <!-- ecwid right here-->
+ <div id="my-store-77250821"></div>
+<div>
+<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?77250821&data_platform=code&data_date=2022-07-28" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-77250821");</script>
+</div>
+
+
+                  <!-- End Navigation HTML -->
+    
+           
+    		</div>
+		</div>
+    </div>
+</section>
+
+
+     
+
+<script>
+    
+    // HIDE & SHOW NAVBAR WHEN SCROLLING
+function _scroll(a, b, c){
+    const d = document.getElementById(a);
+          e = document.body.scrollTop > 200 || document.documentElement.scrollTop > 200;
+    if(b == 'slideDown'){
+        if(e){
+            d.style.top = '0'
+        }
+        else{
+            d.style.top = c
+        }
+    }
+    else if(b == 'slideUp'){
+        if(e){
+            d.style.bottom = '0'
+        }
+        else{
+            d.style.bottom = c
+        }
+    }
+    else if(b == 'slideLeft'){
+        if(e){
+            d.style.left = '0'
+        }
+        else{
+            d.style.left = c
+        }
+    }
+    else{
+        if(e){
+            d.style.right = '0'
+        }
+        else{
+            d.style.right = c
+        }
+    }
+}
+
+
+// COLLAPSIBLE ACCORDION
+function _acc(a, b, c){
+    const d = document.getElementById(a),
+          e = document.getElementsByClassName(b);
+    d.classList.toggle(c);
+    for(let f = 0; f < e.length; f++){
+        const g = e[f];
+        if(g != d){
+            g.classList.remove(c)
+        }
+    }
+}
+
+
+// DROPDOWN MENU WITH TOGGLE ICON
+function _drop(a, b, c){
+    const d = document.getElementById(a),
+          e = document.getElementById(b).getElementsByTagName('i');
+    d.classList.toggle(c);
+    e[0].classList.toggle('hidden');
+    e[1].classList.toggle('visible')
+}
+
+
+// TOGGLE
+function _tgl(a, b){
+    document.getElementById(a).classList.toggle(b)
+}
+    
+    
+    
+    function openSearch(){
+    _drop('thisSearch', 'btnSearch', 'show-search')
+}
+
+function openMenu(){
+    _drop('thisMenu', 'btnMenu', 'show-menu')
+} 
+</script>
+
+	</body>
+</html>

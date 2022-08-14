@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>mocha vil</title>
+	<link rel="stylesheet" href="Style.css">
+	<style type="text/css">
+	.navbar nav ul li a {
+    font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+    </style>
+</head>
+	
+
+<body>
+<div style="padding:0px 2%;" ><div class="navbar">
+	<div class="logo">
+		<a href="snacks.html">
+			<img src="Resource/luxury-belgian-chocolate-biscuits-28793748.jpg" alt="Logo" width="120px">
+		</a>
+		</div>
+		<nav>
+		
+
+
+			<ul>
+				<li><a href="chef.html">Chef</a></li>
+				<li><a href="snacks.html">Snacks</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	<h1>Chef</h1>
+	<br> <!-- create a space for texts   -->
+	<p>  This a  small preview in the process we used to make our products unique </p>
+	<br>
+	<br>
+	<br>
+	  <img src="Resources/baking eggs flour milk.jpg" class="center > <!-- this is how to center a image and how to insert image on html  -->
+	 
+	
+	<a href="default.asp">
+  <img src="Resources/baking process.jpg"  class="center">
+</a>
+
+
+	<a href="default.asp">
+  <img src="Resources/Baking processes 2.jpg"  class="center">
+</a>
+	
+	
+	
+	
+	
+	
+  <link rel="stylesheet" href="Style.css">
+	
+	
+	
+	
+</body>
+</html>

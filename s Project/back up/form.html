@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mocha Vil</title>
+	<link rel="stylesheet" href="Style.css">
+	<style type="text/css">
+	.navbar nav ul li a {
+    font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+    </style>
+</head>
+	
+
+<body>
+<div style="padding:0px 2%;" ><div class="navbar">
+	<div class="logo">
+		<a href="index.html">
+			<img src="Resource/Logo.png" alt="Logo" width="120px">
+		</a>
+		</div>
+		<nav>
+			<ul>
+							<li><a href="chef.html">Chef</a></li>
+				<li><a href="snacks.html">Snacks</a></li>
+				<li><a href="form.html">Sign up </a></li>
+        <li><a href="Coffee.html">Coffee </a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	<h1>Itv limited “Innovative Television"</h1>
+	<h4>Sign up Form</h4>
+	
+<form   name="form" action="/action_page.php" onsubmit="return validateForm()" method="post"> 
+	<p class="solid" style="padding:10px 550px">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="pnum">Phone Number:</label><br>
+  <input type="number" id="pnum" name="pnum"><br>
+  
+  <input type="submit" value="Submit">
+  </p>
+  
+</form   >
+
+	<script>
+	function validateForm() {
+  let x = document.forms["form"]["fname"].value;
+   let l = document.forms["form"]["lname"].value;
+   let e = document.forms["form"]["email"].value;
+   let n = document.forms["form"]["pnum"].value;
+   
+   
+  if (x == "") {
+    alert("First Name must be filled out");
+    return false;
+  }
+    if (l == "") {
+    alert("Last Name must be filled out");
+    return false;
+  }
+  if (e == "") {
+    alert("email  must be filled out");
+    return false;
+  }
+  if (n == "") {
+    alert("Phone number must be filled out");
+    return false;
+  }
+}
+ 
+ </script>
+	
+	
+	
+</div>
+
+	
+	
+</body>
+</html>
